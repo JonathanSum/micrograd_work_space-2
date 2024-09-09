@@ -34,7 +34,7 @@ export default function Zoom({ children }) {
 
                 <TransformComponent
                     contentClass='main'
-                    wrapperStyle={{ height: '50vh', width: '80vw' }}>
+                    wrapperStyle={{ height: '50vh', width: '100vw' }}>
                     {children}
 
 

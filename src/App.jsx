@@ -5,6 +5,7 @@ import Top from './component/Top'
 import Node from './model/Node'
 import MermaidComponent from './component/MermaidComponent'
 import { Grid, GridItem } from '@chakra-ui/react'
+import Left from './component/Left'
 function App() {
   const [count, setCount] = useState(0)
   const [graph, setGraph] = useState("graph LR\n")
@@ -57,7 +58,7 @@ function App() {
         gap={4}
       >
         <GridItem rowSpan={1} colSpan={4} bg='gray.50'><Top /></GridItem>
-        <GridItem colSpan={2} bg='papayawhip' ></GridItem>
+        <GridItem colSpan={2} bg='papayawhip' ><Left /></GridItem>
         <GridItem colSpan={2} bg='tomato' ></GridItem>
       </Grid>
     </>
