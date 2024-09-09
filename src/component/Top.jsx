@@ -186,7 +186,6 @@ const Top = () => {
 
     return (
         <>
-            <p style={{ backgroundColor: "red" }}> Yes?</p>
             <Zoom > <Mermaid chart={data} id="app1" /> </Zoom>
             {/* <Mermaid chart={data} id="app1" /> */}
             {/* <Flow data={data} /> */}

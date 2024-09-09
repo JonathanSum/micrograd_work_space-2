@@ -4,6 +4,7 @@ import Mermaid from './component/Mermaid'
 import Top from './component/Top'
 import Node from './model/Node'
 import MermaidComponent from './component/MermaidComponent'
+import { Grid, GridItem } from '@chakra-ui/react'
 function App() {
   const [count, setCount] = useState(0)
   const [graph, setGraph] = useState("graph LR\n")
@@ -47,8 +48,18 @@ function App() {
         {/* <Mermaid id={"app0"} chart={lg.join('')} /> */}
 
         {/* <MermaidComponent id={"app1"} source={lg.join('')} /> */}
-        <Top />
+        {/* <Top /> */}
       </div>
+      <Grid
+        h='100vh'
+        templateRows='repeat(2, 1fr)'
+        templateColumns='repeat(4, 1fr)'
+        gap={4}
+      >
+        <GridItem rowSpan={1} colSpan={4} bg='gray.50'><Top /></GridItem>
+        <GridItem colSpan={2} bg='papayawhip' ></GridItem>
+        <GridItem colSpan={2} bg='tomato' ></GridItem>
+      </Grid>
     </>
   )
 }
